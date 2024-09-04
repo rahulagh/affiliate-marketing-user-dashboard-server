@@ -9,8 +9,9 @@ const app = express();
 
 const allowedOrigins = [
   'http://localhost:3000',
-  process.env.FRONTEND_URL
-].filter(Boolean); // This removes any falsy values from the array
+  'https://affiliate-marketing-user-dashboard-client.vercel.app'
+].filter(Boolean);
+
 
 app.use(cors({
   origin: function(origin, callback) {
